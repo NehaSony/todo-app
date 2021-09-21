@@ -29,7 +29,8 @@ function App() {
       <header className="App-header">
         <img src={logo} alt="Logo" />
         <h1>TODO APPLICATION</h1><div>
-          <input type="text" id="todoInput" placeholder="Write you tasks here!"  />
+          <input type="text" id="todoInput" placeholder="View add tasks via backend" />
+          <input type="submit" value="+" className="btn" style={{flex: '10'}}/>
           {todos ? todos.map((todo) => {
             return (
               <p><Todo key={todo.id} data={todo} /></p>
